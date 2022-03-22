@@ -19,7 +19,8 @@ namespace G
         private string parameterdead = "開關死亡";
         private Animator player_ani; //動畫控制器
         private Rigidbody2D rig;//剛體
-
+        private float h;
+        private float v;
 
 
         #endregion
@@ -33,11 +34,46 @@ namespace G
 
         private void Update()
         {
-            MoveNAnimation();
+            //MoveNAnimation();
+            getinput();
+            move();
         }
         #endregion
 
         #region 方法:較複雜行為
+        private void getinput()
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+
+            //print(h);
+        }
+
+        private void move()
+        {
+            rig.velocity = new Vector2(h, v)*moveSpeed ;
+            if (h != 0 || v != 0)
+            {
+                player_ani.SetBool("is_walking", true);
+            }
+            else
+            {
+                player_ani.SetBool("is_walking", false);
+            }
+
+            if (h < 0)
+            {
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else if (h > 0)
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            //也可以是transform.eulerAngles = new Vector3(0, h > 0 ? 0 : 180, 0);
+
+        }
+
+        /*
         void MoveNAnimation()
         {
             float horizontalInput = Input.GetAxis("Horizontal");
@@ -60,6 +96,7 @@ namespace G
                 transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             }
         }
+        */
         #endregion
 
     }
