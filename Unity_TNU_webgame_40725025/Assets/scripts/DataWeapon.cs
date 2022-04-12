@@ -22,7 +22,8 @@ namespace g
         public Vector3[] v3spawnpoint;
         [Header("武器物件")]
         public GameObject goweapon;
-
+        [Header("飛行方向")]
+        public Vector3[] v3dir;
 
     }
 

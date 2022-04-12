@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4ad19457e83d04080b3e523bd6b219, type: 3}
   m_Name: axe
   m_EditorClassIdentifier: 
-  flyspeed: 350
+  flyspeed: 400
   attack: 15
   countstart: 1
   countmax: 3
-  interval: 3.5
+  interval: 1
   v3spawnpoint:
   - {x: -0.99, y: 0.48, z: 0}
   - {x: 0, y: 1.11, z: 0}
   - {x: 0.96, y: 0.42, z: 0}
   goweapon: {fileID: 153514619815171263, guid: 37c9e5482807e9f4daa88cd21e25eb7d, type: 3}
+  v3dir:
+  - {x: 0, y: 1.28, z: 0}

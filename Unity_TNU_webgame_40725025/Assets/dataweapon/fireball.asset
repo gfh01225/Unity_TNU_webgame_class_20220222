@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4ad19457e83d04080b3e523bd6b219, type: 3}
   m_Name: fireball
   m_EditorClassIdentifier: 
-  flyspeed: 200
+  flyspeed: 82
   attack: 10
   countstart: 3
   countmax: 6
-  interval: 3.5
-  v2spawnpoint:
-  - {x: 0.3, y: 0}
+  interval: 0.5
+  v3spawnpoint:
+  - {x: 0, y: 0, z: 0}
+  goweapon: {fileID: 2305227865816593464, guid: f7537fceac9fa2a459f5fda6eedec989, type: 3}
+  v3dir:
+  - {x: 1.5, y: 1.5, z: 0}
+  - {x: -1.5, y: 1.5, z: 0.0000033586052}
+  - {x: -1.5, y: -1.5, z: 0}
+  - {x: 1.5, y: -1.5, z: 0}
