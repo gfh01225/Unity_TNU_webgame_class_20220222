@@ -15,6 +15,9 @@ namespace g
         [SerializeField, Header("武器資料")]
         private DataWeapon dataweapon;
 
+        [SerializeField, Header("武器刪除時間"), Range(0, 5)]
+        private float destorytime = 3.5f;
+
         private float timer;
 
         /// <summary>
@@ -64,8 +67,11 @@ namespace g
 
                 float rotationZ = Mathf.Atan2(dataweapon.v3dir[dirrand].y, dataweapon.v3dir[dirrand].x) * Mathf.Rad2Deg;
                 temp.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+                Destroy(temp, destorytime);
 
                 timer = 0;
+
+                GetComponent<Animator>().SetTrigger("attack");
             }
             else
             {

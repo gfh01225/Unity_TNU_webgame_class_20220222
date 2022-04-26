@@ -16,7 +16,7 @@ MonoBehaviour:
   attack: 10
   countstart: 3
   countmax: 6
-  interval: 0.5
+  interval: 1
   v3spawnpoint:
   - {x: 0, y: 0, z: 0}
   goweapon: {fileID: 2305227865816593464, guid: f7537fceac9fa2a459f5fda6eedec989, type: 3}

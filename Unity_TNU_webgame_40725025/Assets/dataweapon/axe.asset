@@ -16,7 +16,7 @@ MonoBehaviour:
   attack: 15
   countstart: 1
   countmax: 3
-  interval: 1
+  interval: 1.5
   v3spawnpoint:
   - {x: -0.99, y: 0.48, z: 0}
   - {x: 0, y: 1.11, z: 0}
