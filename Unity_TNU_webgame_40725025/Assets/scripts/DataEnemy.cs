@@ -19,6 +19,8 @@ namespace g
         public float expDropProbability = 100;
         [Header("經驗掉落類型")]
         public TypeExp typeExp;
+        [Header("走動停止距離"), Range(0, 30)]
+        public float stopdis;
 
         public enum TypeExp
         {

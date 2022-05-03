@@ -67,6 +67,7 @@ namespace g
 
                 float rotationZ = Mathf.Atan2(dataweapon.v3dir[dirrand].y, dataweapon.v3dir[dirrand].x) * Mathf.Rad2Deg;
                 temp.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+                temp.GetComponent<Weapon>().attack = dataweapon.attack;
                 Destroy(temp, destorytime);
 
                 timer = 0;

@@ -18,3 +18,4 @@ MonoBehaviour:
   hp: 100
   expDropProbability: 100
   typeExp: 1
+  stopdis: 1.56
