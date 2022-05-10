@@ -5,16 +5,18 @@ namespace g
 {
     public class HurtSystem : MonoBehaviour
     {
-        [SerializeField, Header("¦å¶q"), Range(0, 1000)]
+        [SerializeField, Header("è¡€é‡"), Range(0, 1000)]
         protected float hp;
         
-        public void gethurt(float dmg)
+        public virtual void gethurt(float dmg)
         {
+            if(hp<=0)return;
+
             hp -= dmg;
             if (hp <= 0) dead();
         }
 
-        private void dead()
+        protected virtual void dead()
         {
             hp = 0;
         }

@@ -249,6 +249,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -886,6 +887,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TX Plant_65: 1169111316192729861
+      TX Plant_1: -4181601160242843456
+      TX Plant_72: -7231285894354950204
+      TX Plant_0: 7393824619407222304
+      TX Plant_66: -6209767362128333939
+      TX Plant_67: -1508517758580546282
+      TX Plant_74: -1169153397740955191
+      TX Plant_4: 8229732441688533532
+      TX Plant_71: 5440799422657938214
+      TX Plant_60: -596551034433369178
+      TX Plant_8: 8743813339972885927
+      TX Plant_64: 1373154500269988645
+      TX Plant_70: -8658160330080294048
+      TX Plant_7: 7718867192508710523
+      TX Plant_73: 8275936377832815375
+      TX Plant_62: -3519185041480760545
+      TX Plant_63: 380701301426154523
+      TX Plant_68: -2963822434237080797
+      TX Plant_6: 1149584892168664425
+      TX Plant_59: -4980147055700712752
+      TX Plant_61: -6507104891860251634
+      TX Plant_5: 3793301123250259786
+      TX Plant_69: -6432398763594867228
+      TX Plant_3: 8387603877276295833
+      TX Plant_2: 6212027134239493093
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
